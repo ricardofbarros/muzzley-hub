@@ -1,0 +1,19 @@
+{
+  "name": "muzzley-hub",
+  "version": "1.0.0",
+  "description": "Managers Hub",
+  "main": "index.js",
+  "author": {
+    "name": "Ricardo Barros",
+    "email": "ricardo.barros@muzzley.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^8.4.0",
+    "muzzley-client": "^0.5.4",
+    "muzzley-idk": "^0.3.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4"
+  }
+}
