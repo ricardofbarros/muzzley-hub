@@ -2,7 +2,7 @@
 var muzzleyHub = require('muzzley-hub');
 var Model = muzzleyHub.Model;
 
-var Subscription = Model.extend({
+var Subscription = new Model({
   name: 'subscription',
   props: {
     muzzleyId: 'string',
@@ -12,15 +12,5 @@ var Subscription = Model.extend({
   },
   keys: ['muzzleyId', 'channelId']
 });
-
-
-Subscription.getAllFromDevice = function(channelId, cb) {
-  return Subscription.mget({muzzleyId: '*', channelId: channelId}, cb);
-};
-
-Subscription.getAllFromUser = function(userId, cb) {
-  return Subscription.mget({muzzleyId: userId, channelId: '*'}, cb);
-};
-
 
 module.exports = Subscription;

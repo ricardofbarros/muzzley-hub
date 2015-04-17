@@ -2,7 +2,7 @@
 var muzzleyHub = require('muzzley-hub');
 var Model = muzzleyHub.Model;
 
-var Credentials = Model.extend({
+var Credentials = new Model({
   name: 'credentials',
   props: {
     email: 'string',
@@ -13,6 +13,5 @@ var Credentials = Model.extend({
   },
   keys: ['muzzleyId', 'providerId']
 });
-
 
 module.exports = Credentials;

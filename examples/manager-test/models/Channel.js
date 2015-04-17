@@ -2,7 +2,7 @@
 var muzzleyHub = require('muzzley-hub');
 var Model = muzzleyHub.Model;
 
-var Channel = Model.extend({
+var Channel = new Model({
   name: 'channel',
   props: {
     id: 'number',
@@ -11,10 +11,5 @@ var Channel = Model.extend({
   },
   keys: ['id']
 });
-
-
-Channel.getAll = function(cb) {
-  return Channel.mget({id: '*'}, cb);
-};
 
 module.exports = Channel;
