@@ -9,9 +9,13 @@
   },
   "license": "MIT",
   "dependencies": {
+    "async": "^0.9.0",
+    "bunyan": "^1.3.5",
+    "chalk": "^1.0.0",
+    "clean-obj": "^0.1.2",
+    "extend": "^2.0.0",
     "hapi": "^8.4.0",
-    "muzzley-client": "^0.5.4",
-    "muzzley-idk": "^0.3.6"
+    "muzzley-client": "^0.5.4"
   },
   "devDependencies": {
     "mocha": "^2.2.4"
